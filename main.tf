@@ -57,7 +57,7 @@ resource "aws_security_group" "webapp-sg" {
 resource "aws_instance" "app-server" {
   ami             = var.ami
   instance_type   = "t2.micro"
-  security_groups = ["${aws_security_group.webapp-sg.name}"]
+  security_groups = [aws_security_group.webapp-sg.name]
 
   key_name = "devsecops"
 

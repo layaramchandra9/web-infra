@@ -1,2 +1,5 @@
 # Directories
 .terraform/
+
+#File
+.terraform.lock.*
