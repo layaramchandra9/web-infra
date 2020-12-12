@@ -7,11 +7,11 @@
 #### Terraform Version 0.14
 
 For Deployment purpose Add tomcat and ubuntu user to webapps group
-sudo chgrp -R tomcat /var/lib/tomcat9/webapps
-sudo chgrp -R ubuntu /var/lib/tomcat9/webapps
+> sudo chgrp -R tomcat /var/lib/tomcat9/webapps
+> sudo chgrp -R ubuntu /var/lib/tomcat9/webapps
 
 and when you need to deploy new applications, add write permissions for that group:
-sudo chmod -R g+w /var/lib/tomcat9/webapps
+> sudo chmod -R g+w /var/lib/tomcat9/webapps
 
 which you remove again after deployment:
-sudo chmod -R g-w /var/lib/tomcat9/webapps
+> sudo chmod -R g-w /var/lib/tomcat9/webapps
